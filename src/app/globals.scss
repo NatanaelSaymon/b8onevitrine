@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #1f2326;
+  --black-opacity: rgba(31, 35, 38, 0.75);
+  --red: #ff4656;
+  --silver: #c4c4c4;
+}
+
+body {
+  background: var(--red);
+
+  color: var(--black);
+  font: 400 1rem "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
