@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 0px 0px 4px 4px;
+
+  background: rgba(255, 255, 255, 0.4);
+  img {
+    max-width: 100%;
+    display: block;
+
+    width: 291px;
+    height: 416px;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 16px;
+    color: #41414d;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #09090a;
+
+    border-top: 1px solid #d9d9d9;
+  }
+}
