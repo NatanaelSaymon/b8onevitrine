@@ -1,38 +1,47 @@
 .productlist {
+  max-width: 1366px;
+  margin: 32px auto 50px auto;
+  padding: 0 10px;
+
   &__content {
     display: grid;
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(250px, 1fr)
-    ); /* Creates flexible columns */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 30px;
 
     width: 100%;
-    max-width: 1366px;
-    margin: 32px auto 0 auto;
-    padding: 0 10px;
   }
 }
 
 .categoryButtons {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1rem;
 
+  p {
+    font-size: 16px;
+    color: #211915;
+    font-weight: 700;
+  }
+
   button {
+    padding: 10px 0;
+    font-weight: bold;
+
     padding: 0.5rem 1rem;
     border-radius: 20px;
     border: 1px solid #ddd;
     background-color: #fff;
     color: #333;
-    cursor: pointer;
+
     font-size: 0.9rem;
     transition: all 0.2s ease;
 
+    cursor: pointer;
+
     &:hover {
       background-color: #f5f5f5;
-      border-color: #bbb;
     }
   }
 }

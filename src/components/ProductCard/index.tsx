@@ -3,6 +3,13 @@
 import { Product } from "@/types/product";
 import styles from "./styles.module.scss";
 
+function formatCurrency(value?: number) {
+  return new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(value ?? 0);
+}
+
 export default function ProductCard(product: Product) {
   return (
     <div className={styles.card}>
@@ -16,9 +23,11 @@ export default function ProductCard(product: Product) {
               "..."
             : product.title}
         </h3>
-        <p>{product.price}</p>
+        <p>{formatCurrency(product.price ?? 0)}</p>
       </div>
-      <button>Comprar</button>
+      <div className={styles.card__btn}>
+        <button>Comprar</button>
+      </div>
     </div>
   );
 }
