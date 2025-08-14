@@ -3,10 +3,10 @@ import styles from "./styles.module.scss";
 import ProductList from "@/components/ProductList";
 
 export const metadata: Metadata = {
-  title: "Ofertas",
+  title: "b8one - Ofertas",
   description: "Aproveite as nossas ofertas!",
   openGraph: {
-    title: "Ofertas",
+    title: "b8one - Ofertas",
     description: "Aproveite as nossas ofertas!",
   },
 };

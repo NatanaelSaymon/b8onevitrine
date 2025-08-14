@@ -3,10 +3,10 @@ import styles from "../styles/page.module.scss";
 
 export const metadata: Metadata = {
   title: "Home - b8one",
-  description: "Desafio Junior",
+  description: "Desafio Júnior",
   openGraph: {
-    title: "",
-    description: "Desafio Junior",
+    title: "Home - b8one",
+    description: "Desafio Júnior",
   },
 };
 
