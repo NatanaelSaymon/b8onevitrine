@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-color: black;
+  background-color: var(--black);
   padding: 32px 0;
 
   &__content {
@@ -8,8 +8,7 @@
     max-width: 1366px;
     margin: 0 auto;
     padding: 0 10px;
-    color: #ffffff;
-    //background-color: red;
+    color: var(--white);
 
     display: flex;
     align-items: center;
@@ -24,6 +23,9 @@
 
       li {
         list-style: none;
+        @media (max-width: 768px) {
+          font-size: 13px;
+        }
       }
     }
   }

@@ -12,9 +12,14 @@
   }
 
   &Title {
-    color: #211915;
+    color: var(--black);
     margin: 40px 0;
     text-transform: uppercase;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin: 25px;
+    }
   }
 }
